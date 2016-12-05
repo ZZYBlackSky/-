@@ -2,7 +2,7 @@
 body{width:100%;font-family: "微软雅黑";}
 .header_img{width:100%;height:6rem;background: url(../img/1.jpg) no-repeat left center;background-size:100% 100%;float: left;position: relative;}
 .header_img p{font-size:0.28rem;color: #ef9197;position: absolute;bottom: 0.24rem;right: 0.26rem;}
-.present_img{width:100%;height:14.26rem;background: url(../img/2.png) no-repeat left center;background-size:100% 100%;float: left;position: relative;}
+.present_img{width:100%;height:14.26rem;background: url(../img/2-2.jpg) no-repeat left center;background-size:100% 100%;float: left;position: relative;}
 .present_img p{width:2.7rem;height: 0.4rem;line-height: 0.4rem;font-size:0.26rem;color: #606060;}
 .present_img p:first-child{position: absolute;top:4.05rem;right:0.45rem;}
 .present_img p:nth-child(2){width:2.6rem;position: absolute;left: 0.7rem;top: 8.9rem;text-indent: 0.05rem;}
