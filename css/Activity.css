@@ -1,0 +1,216 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{width:100%;font-family: "微软雅黑";}
+ul,li{list-style: none;}
+.activity_banner{
+	width: 100%;
+	height: 7.81rem;
+	float: left;
+	background:url(../img/banner.jpg) no-repeat left center ;
+	background-size:100% 100%;
+}
+.activity_regulation{
+	width: 100%;
+	height: 4.54rem;
+	float: left;
+	background: url(../img/2.jpg) no-repeat left center;
+	background-size:100% 100%;
+	padding: 1.2rem 0 0 1.25rem;
+}
+.activity_regulation li{
+	width: 4.9rem;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+	float: left;
+	color: #343853;
+}
+.activity_regulation p span{color: #ffbea2;}
+.activity_li_p1{width: 0.6rem;float: left;}
+.activity_li_p2{width: 4.28rem;float: left;}
+
+/*冠军排行版*/
+.activity_champion{
+	width: 100%;
+	height: 5.21rem;
+	float: left;
+	background:url(../img/3.jpg) no-repeat left center ;
+	background-size:100% 100%;
+	padding:1.45rem 0 0 0.06rem;
+}
+.activity_champion_li{
+	width:2.26rem;
+	height: 2.66rem;
+	float: left;
+	margin-left: 0.15rem;
+}
+.activity_champion_img{
+	width:2.26rem;
+	height: 2.26rem;
+	border-radius:50%;
+	background: white;
+	float: left;
+	position: relative;
+	background-size:100%;
+}
+.activity_champion_p{
+	width: 100%;
+	float: left;
+	font-family:"创艺简标宋";
+	font-size:0.24rem ;
+	text-align: center;
+	color: #fff;
+	margin-top:0.16rem ;
+}
+.activity_champion_imgcode{
+	width: 100%;
+	height:0.69rem;
+	padding-top: 0.13rem;
+	font-size: 0.24rem;
+	text-align: center;
+	color: #ffc397;
+	background: url(../img/champion@2x.png) no-repeat left center;
+	background-size:100% 100% ;
+	position: absolute;
+	left: 0;
+	top: 1.28rem;
+}
+.activity_vote{
+	width: 100%;
+	float: left;
+	position: relative;
+}
+.activity_vote_top{
+	width: 100%;
+	height: 3.42rem;
+	float: left;
+	background: url(../img/4.jpg) no-repeat left center;
+	background-size:100% 100% ;
+}
+.activity_vote_center{
+	float: left;
+	width: 100%;
+	/*height: 5rem;*/
+	background: url(../img/5.jpg) repeat left top;
+}
+.activity_vote_Anchor{
+	width: 7rem;
+	/*background:white;*/
+	margin:-2.35rem 0 -2.4rem 0.25rem;
+	float: left;
+}
+.activity_vote_Anchor_header{
+	width: 100%;
+	height:2rem;
+	float: left;
+	background: white;
+}
+.activity_vote_Anchor_headerimg{
+	width: 6.55rem;
+	height: 0.61rem;
+	margin:0.55rem auto;
+	background: url(../img/vote-16@2x.png) no-repeat left center;
+	background-size:100% 100%;
+}
+
+
+/*投票的内容，包括用户ID，评论，投票数*/
+.activity_vote_Anchors{
+	width: 100%;
+	/*height: 5rem;*/
+	float: left;
+	background: white;
+}
+.activity_vote_AnchorsContent{
+	width: 2.84rem;
+	height: 6.6rem;
+	font-size: 0.24rem;
+	font-family:arial;
+	color: #333333;
+	float: left;
+	margin-left: 0.44rem;
+	margin-bottom: 0.64rem;
+}
+.activity_img{
+	width: 2.84rem;
+	height: 4.22rem;
+}
+.activity_comment{
+	width:100%;
+	
+	display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.activity_vote_Anchor_p{
+	width: 100%;
+}
+.activity_allp{
+	width: 77%;
+	float: left;
+}
+.activity_user_head{
+	width: 0.56rem;
+	height: 0.56rem;
+	border-radius:50% ;
+	float: left;
+	margin-top:0.2rem;
+}
+.activity_user{
+	line-height: 0.32rem;
+}
+.activity_number{
+	line-height: 0.32rem;
+}
+.submit_vote{
+	width: 2.72rem;
+	height: 0.57rem;
+	background: #ffbea2;
+	border: 0;
+	color: white;
+	margin-top: 0.22rem;
+}
+.activity_vote_Anchor_footer{
+	width: 100%;
+	height: 1.2rem;
+	padding: 0.3rem 0 0.4rem 0;
+	float: left;
+	margin-top: 0.2rem;
+	background: white;
+	/*display: none;*/
+}
+.activity_vote_Anchor_footerimg{
+	width: 6.13rem;
+	height:0.55rem;
+	margin:0 auto;
+	background: url(../img/end@2x.png) no-repeat left center;
+	background-size:100% ;
+	display: none;
+}
+
+/*最下面的背景图*/
+.activity_vote_bottom{
+	width: 100%;
+	height: 4.75rem;
+	background: url(../img/6.jpg) no-repeat left center;
+	background-size:100% 100%;
+	float: left;
+	position: absolute;
+	bottom:-4.7rem;
+	z-index: -1;
+}
+            
+.dropload-refresh{
+	font-size: 0.3rem;
+	background: white;
+	text-align: center;
+}
+.dropload-load{
+	font-size: 0.3rem;
+	background: white;
+	text-align: center;
+}
+.dropload-noData{
+	font-size: 0.3rem;
+	background: white;
+	text-align: center;
+}
