@@ -30,42 +30,42 @@ $(function(){
 			}
 			
 	
-//	$.ajax({
-//			type:"GET",
-//			dataType:'jsonp',
-//			url:"http://wt.cctbn.com/index.php?g=1202&m=Index&a=works_page",
-//			jsonp: "callback",
-//          jsonpCallback:"works_page",
-//			async:true,
-//			data:{type:"page"},
-//			success:function(res){
-//				console.log(res)
-//				setDataVote(res);
-//			}
-//		
-//	});
+	$.ajax({
+			type:"GET",
+			dataType:'jsonp',
+			url:"http://wt.cctbn.com/index.php?g=1202&m=Index&a=works_page",
+			jsonp: "callback",
+            jsonpCallback:"works_page",
+			async:true,
+			data:{type:"page"},
+			success:function(res){
+				console.log(res)
+				setDataVote(res);
+			}
+		
+	});
 	
-//	
-//	function setDataVote(res){
-//		for (var i = 0; i < 4; i++) {
-//			var userId = pad(res[i].id,3);
-//				var objVote = $( '<li class="activity_vote_AnchorsContent">'+
-//							'<img class="activity_img" src="http://wt.cctbn.com/tpl/1202/images/'+ res[i].cover +'"/>'+
-//							'<p class="activity_comment">' + res[i].synopsis + '</p>'+
-//							'<div class="activity_vote_Anchor_p">'+
-//								'<div class="activity_allp">'+
-//									'<p class="activity_user">上传者:' + res[i].uploader + '</p>'+
-//									'<p class="activity_number">编号：' + userId + '</p>'+
-//									'<p class="activity_votes">投票数：' + res[i].piao + '票</p>'+
-//								'</div>'+
-//								'<img class="activity_user_head" src="http://wt.cctbn.com/tpl/1202/images/' + res[i].portrait + '"/>'+
-//							'</div>'+
-//							'<button class="submit_vote" type="submit">投票</button>'+
-//						'</li>');
-//				$(".activity_vote_Anchors").append(objVote);
-//						
-//		}
-//	}
+	
+	function setDataVote(res){
+		for (var i = 0; i < 4; i++) {
+			var userId = pad(res[i].id,3);
+				var objVote = $( '<li class="activity_vote_AnchorsContent">'+
+							'<img class="activity_img" src="http://wt.cctbn.com/tpl/1202/images/'+ res[i].cover +'"/>'+
+							'<p class="activity_comment">' + res[i].synopsis + '</p>'+
+							'<div class="activity_vote_Anchor_p">'+
+								'<div class="activity_allp">'+
+									'<p class="activity_user">上传者:' + res[i].uploader + '</p>'+
+									'<p class="activity_number">编号：' + userId + '</p>'+
+									'<p class="activity_votes">投票数：' + res[i].piao + '票</p>'+
+								'</div>'+
+								'<img class="activity_user_head" src="http://wt.cctbn.com/tpl/1202/images/' + res[i].portrait + '"/>'+
+							'</div>'+
+							'<button class="submit_vote" type="submit">投票</button>'+
+						'</li>');
+				$(".activity_vote_Anchors").append(objVote);
+						
+		}
+	}
 
 		
     var counter = 0;
@@ -181,7 +181,7 @@ $(function(){
                             		$(".activity_vote_Anchor_footer").css({
 					    				"display": "block"
 					    			})
-                            },400)
+                            },1000)
 	                   
                             break;
                         }
@@ -208,14 +208,13 @@ $(function(){
 						   		async:true,
 						   		jsonp: "callback",
 	           					jsonpCallback:"vote",
-						   		data:{uid:100,works_id:userId},
+						   		data:{uid:13,works_id:userId},
 						   		success:function(res){
 						   			console.log(res);
 						   			if(res.flag == "y"){
-						   				
 			                        		num1++;
 			                   			$(this).prev().find("p").eq(3).find("span").text(num1);
-						   				alert("您还有"+ res.num + "次投票机会")
+						   				alert("投票成功，您今天还有"+ res.num + "次投票机会")
 						   			}
 						   			else{
 						   				alert("您今天的投票次数已经用完，请明天再来投票，谢谢")
@@ -225,7 +224,7 @@ $(function(){
 						   	});
 						   })
                                               
-                    },300);
+                    },1000);
                 },
                 error: function(xhr, type){
                     alert('Ajax error!');

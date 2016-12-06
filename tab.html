@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		body{
+			/*background: black;*/
+			
+		}
+			a{
+				width: 400px;
+				height: 400px;
+				text-align: center;
+				line-height: 400px;
+				text-decoration: none;
+				display: block;
+				margin: 400px auto;
+				background: red;
+				font-size:200px ;
+				font-family: "仿宋";	
+				color: cyan;
+				border-radius: 50%;
+				/*opacity: 0.5;*/
+			}
+			.box{
+				width: 10px;
+				height:1000px;
+			}
+			a:first-child{
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#num5" id="num1">你</a>
+		<a href="#num13" id="num2">吗</a>
+		<a href="#num11" id="num3">说</a>
+		<a href="#num2" id="num4">么</a>
+		<a href="#num9" id="num5">知</a>
+		<a href="#num10" id="num6">是</a>
+		<a href="#num14" id="num7">我</a>
+		<a href="#num7" id="num9">道</a>
+		<a href="#num2" id="num10">猪</a>
+		<a href="#num4" id="num11">什</a>
+		<a href="#num6" id="num13">你</a>
+		<a href="#num3" id="num14">想</a>
+		<div class="box">
+			
+		</div>
+	</body>
+	<script src="js/jquery-2.1.1.js"></script>
+	<script type="text/javascript">
+		function random(min,max){
+			return parseInt(Math.random()*(max-min));
+		}
+		console.log(random(0,256))
+		for (var i = 0; i < $("a").length; i++) {
+			$("a").eq(i).css({
+				background:"rgb(" + random(0,256) +"," + random(0,256) + "," + random(0,256) +")"
+			})
+		}
+	</script>
+</html>
